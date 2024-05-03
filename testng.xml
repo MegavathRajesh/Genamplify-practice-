@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNG.States">
+          
+          <methods>
+			 <include name="GJ"></include>
+			  
+		  </methods>
+      </class>
+      
+      <class name="testNG.States3">
+		  <methods>
+			  <include name="UP"></include>
+		  </methods>  
+      </class>
+      
+      <class name="testNG.States2">
+		  <methods>
+			  <exclude name="WB"></exclude>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
